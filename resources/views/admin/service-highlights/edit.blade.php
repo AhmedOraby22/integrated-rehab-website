@@ -36,7 +36,7 @@
             <div class="card admin-highlight-card">
               <div class="admin-highlight-preview">
                 <div
-                  class="service-highlight-photo"
+                  class="footer-service-image"
                   style="background-image: url('{{ $highlight->image_url }}');"
                 ></div>
               </div>
