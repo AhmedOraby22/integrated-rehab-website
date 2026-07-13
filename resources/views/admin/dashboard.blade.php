@@ -12,6 +12,10 @@
         <p>Welcome to the Integrated Rehab and Physical Therapy admin area.</p>
       </div>
 
+      @if (session('status'))
+        <div class="alert-success">{{ session('status') }}</div>
+      @endif
+
       <div class="grid grid-3 admin-cards">
         <div class="card">
           <h3>Service Section</h3>

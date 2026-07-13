@@ -18,6 +18,8 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/login', [AdminAuthController::class, 'showLogin'])->name('login');
     Route::post('/login', [AdminAuthController::class, 'login'])->name('login.submit');
+    Route::get('/register', [AdminAuthController::class, 'showRegister'])->name('register');
+    Route::post('/register', [AdminAuthController::class, 'register'])->name('register.submit');
 
     Route::middleware('admin')->group(function () {
         Route::get('/', [AdminAuthController::class, 'dashboard'])->name('dashboard');

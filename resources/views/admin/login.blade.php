@@ -21,7 +21,7 @@
         @csrf
 
         <div class="field">
-          <label for="username">Username</label>
+          <label for="username">Username or email</label>
           <input
             type="text"
             id="username"
@@ -55,6 +55,9 @@
       </form>
 
       <p class="admin-login-footer">
+        @if ($signupEnabled)
+          Don't have an account? <a href="{{ route('admin.register') }}">Sign up</a><br>
+        @endif
         <a href="{{ route('home') }}">&larr; Back to website</a>
       </p>
     </div>
