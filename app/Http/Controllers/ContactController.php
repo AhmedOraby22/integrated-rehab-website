@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Mail\ContactFormMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Throwable;
 
 class ContactController extends Controller
 {
@@ -27,7 +29,17 @@ class ContactController extends Controller
 
         $to = config('mail.contact_to', env('CONTACT_TO_EMAIL', 'info@integratedrehabandphysicaltherapy.com'));
 
-        Mail::to($to)->send(new ContactFormMail($data));
+        try {
+            Mail::to($to)->send(new ContactFormMail($data));
+        } catch (Throwable $e) {
+            Log::error('Contact form mail failed: '.$e->getMessage());
+
+            return back()
+                ->withInput()
+                ->withErrors([
+                    'email' => 'We could not send your message right now. Please call us directly or try again later.',
+                ]);
+        }
 
         return redirect()
             ->route('contact')
