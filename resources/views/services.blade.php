@@ -6,46 +6,65 @@
 
   <section class="section" style="padding-top:56px;">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header" style="max-width:720px;">
         <span class="eyebrow">Services</span>
-        <h1>Physical therapy, rehabilitation, and cranial therapy</h1>
-        <p>Every treatment plan starts with an assessment of how you move today, and where you
-          want to get back to.</p>
+        <h1>Our Services</h1>
+        <p>Welcome to the Integrated Rehab and Physical Therapy information page. We are the
+          premier provider of Physical Therapy and Rehabilitation. Our goal is to provide the
+          very best care in spine and joint care, acute and chronic pain, functional limitations,
+          cardiac and pulmonary rehabilitation, pelvic floor rehabilitation, geriatric and
+          pediatric care, mobility restoration, and posture correction. Because our quality
+          control standards are high, our Physical Therapists are among the best in the business.
+          Our goal is to always deliver the best individualized care possible. We want you, our
+          valued customer, to be happy. Here is a general list of our services.</p>
       </div>
 
-      <div class="grid grid-3">
+      <div class="grid grid-2">
         <div class="card">
-          <div class="icon-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21C12 21 4 15.5 4 9.8C4 6.6 6.4 4.5 9 4.5C10.5 4.5 11.6 5.2 12 6C12.4 5.2 13.5 4.5 15 4.5C17.6 4.5 20 6.6 20 9.8C20 15.5 12 21 12 21Z"/></svg>
-          </div>
-          <h3>Physical Therapy</h3>
-          <p>Hands-on treatment and guided exercise to restore strength, mobility, and range of
-            motion after injury, surgery, or a chronic condition.</p>
+          <h3>Spine and Joint Care</h3>
+          <ul>
+            <li>Disk Bulge and Disk Herniations</li>
+            <li>Stiffness</li>
+            <li>Acute and Chronic Pains</li>
+            <li>Muscle Spasms</li>
+          </ul>
         </div>
 
         <div class="card">
-          <div class="icon-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h4l2-8 4 16 2-8h4"/></svg>
-          </div>
-          <h3>Rehabilitation</h3>
-          <p>Structured recovery programs for patients returning from hospitalization, surgery,
-            or long-term conditions — paced to your body, not a calendar.</p>
+          <h3>Pulmonary Rehabilitation</h3>
+          <ul>
+            <li>Shortness of breath, easy fatigability, oxygen weaning</li>
+            <li>Sarcoidosis, Pulmonary Fibrosis</li>
+            <li>Chronic Obstructive Pulmonary Disease (COPD)</li>
+            <li>Respiratory Failure, Types 1 &amp; 2</li>
+          </ul>
         </div>
 
         <div class="card">
-          <div class="icon-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M5 8c0 5 3 5 3 9M19 8c0 5-3 5-3 9"/></svg>
-          </div>
-          <h3>Cranial Therapy</h3>
-          <p>A gentle, hands-on technique used to relieve tension and support the body's natural
-            healing process alongside your regular treatment plan.</p>
+          <h3>Cardiac Rehabilitation</h3>
+          <ul>
+            <li>Ischemic/Coronary Heart Disease</li>
+            <li>Arrhythmias</li>
+            <li>Heart Failure</li>
+            <li>Hypertension and rehab after heart surgery</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>General Weakness</h3>
+          <ul>
+            <li>Recovery after hospitalization or surgery</li>
+            <li>Muscle Weakness</li>
+            <li>Functional Limitation</li>
+            <li>Restoring day to day activities</li>
+          </ul>
         </div>
       </div>
 
       <div class="promo-panel" style="margin-top:40px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;">
         <div>
           <span class="eyebrow" style="color:#fff;">Not sure where to start?</span>
-          <h3 style="margin-bottom:4px;">Get a phone or video consultation for $14.99</h3>
+          <h3 style="margin-bottom:4px;">Get a phone or video consultation for $49.99</h3>
           <p style="color: rgba(255,255,255,0.85); margin-bottom:0;">Mornings, evenings, and
             weekend appointments available.</p>
         </div>

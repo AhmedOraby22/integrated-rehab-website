@@ -23,13 +23,13 @@
 
       <div class="visit-map-card">
         <iframe
-          title="Sunset Park office map"
+          title="Bay Ridge office map"
           src="https://maps.google.com/maps?q=6806+5th+Ave,+Brooklyn,+NY+11220&output=embed"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
         <div class="visit-map-body">
-          <h3>Sunset Park Office</h3>
+          <h3>Bay Ridge Office</h3>
           <p>6806 5th Ave<br>Brooklyn, NY 11220</p>
           <p><strong>Phone:</strong> <a href="tel:3474620980">347-462-0980</a></p>
         </div>
@@ -39,11 +39,12 @@
     <div class="visit-hours">
       <h3>Hours of Operation</h3>
       <ul>
-        <li><span>Monday</span><span>11:00 AM – 7:00 PM</span></li>
-        <li><span>Tuesday</span><span>11:00 AM – 7:00 PM</span></li>
-        <li><span>Wednesday</span><span>11:00 AM – 7:00 PM</span></li>
-        <li><span>Thursday</span><span>11:00 AM – 7:00 PM</span></li>
-        <li><span>Friday</span><span>11:00 AM – 7:00 PM</span></li>
+        <li><span>Monday</span><span>9:30 AM – 7:30 PM</span></li>
+        <li><span>Tuesday</span><span>9:30 AM – 7:30 PM</span></li>
+        <li><span>Wednesday</span><span>9:30 AM – 7:30 PM</span></li>
+        <li><span>Thursday</span><span>9:30 AM – 7:30 PM</span></li>
+        <li><span>Friday</span><span>9:30 AM – 7:30 PM</span></li>
+        <li><span>Saturday</span><span>9:30 AM – 7:30 PM</span></li>
       </ul>
       <a href="{{ route('locations') }}" class="visit-directions">Get Driving Directions</a>
     </div>

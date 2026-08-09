@@ -41,7 +41,7 @@
             <div class="doctor-avatar">AS</div>
             <div>
               <h3 style="margin-bottom:2px;">Dr. Abdelrahman Salem</h3>
-              <div class="role">Director of Physical Therapy, PT, DPT, PhD, CCI</div>
+              <div class="role">Doctor of Physical Therapy, DPT, MCCP, IMT, MP, CST</div>
             </div>
           </div>
           <div class="doctor-card">

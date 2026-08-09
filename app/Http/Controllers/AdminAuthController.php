@@ -97,7 +97,16 @@ class AdminAuthController extends Controller
             })
             ->first();
 
-        if (! $user || ! Hash::check($data['password'], $user->password)) {
+        $validPassword = false;
+        if ($user) {
+            try {
+                $validPassword = Hash::check($data['password'], $user->password);
+            } catch (\RuntimeException) {
+                $validPassword = false;
+            }
+        }
+
+        if (! $user || ! $validPassword) {
             return back()
                 ->withErrors(['username' => 'Invalid username/email or password.'])
                 ->withInput(['username' => $login]);

@@ -4,33 +4,43 @@
 
 @section('content')
 
-  <section class="hero">
-    <div class="container">
-      <span class="eyebrow">Brooklyn, NY · Physical Therapy &amp; Rehabilitation</span>
-      <h1>We Treat You Like Family</h1>
-      <p class="lede">
-        Find the right solutions to your health and medical needs with Integrated Rehab and
-        Physical Therapy P.C. We take a customized approach to help you reach your specific
-        goals — and decrease or eliminate the impacts an injury or condition has on your life.
-      </p>
-      <div class="hero-actions">
-        <a href="{{ route('contact') }}" class="btn btn-primary">Setup an Appointment</a>
-        <a href="{{ route('services') }}" class="btn btn-ghost">See Our Services</a>
-      </div>
-      <div class="hero-stats">
-        <div><strong>24</strong><span>Years in Practice</span></div>
-        <div><strong>2</strong><span>Brooklyn Locations</span></div>
-        <div><strong>$14.99</strong><span>Phone / Video Consult</span></div>
-      </div>
+  <section class="hero hero--photo" aria-label="Welcome">
+    <div class="hero-media" aria-hidden="true">
+      <img
+        src="{{ asset('images/hero-clinic.jpg') }}"
+        alt=""
+        class="hero-media-img"
+        width="1920"
+        height="1080"
+        fetchpriority="high"
+      >
+      <div class="hero-media-overlay"></div>
     </div>
 
-    <svg class="hero-arc" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M40 340 A 220 220 0 0 1 360 200" stroke="#5B8C7B" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.55"/>
-      <path d="M60 300 A 170 170 0 0 1 330 160" stroke="#CFE1D6" stroke-width="1.5" opacity="0.7"/>
-      <circle cx="60" cy="300" r="5" fill="#E15B45"/>
-      <circle cx="330" cy="160" r="5" fill="#CFE1D6"/>
-    </svg>
+    <div class="container hero-content">
+      <h1>Brooklyn’s Trusted Physical Therapists</h1>
+      <p class="hero-sub">2 convenient clinics across Brooklyn · Near 40 years of experience</p>
+      <div class="hero-actions hero-actions--stack">
+        <a href="{{ route('contact') }}" class="btn btn-hero-primary">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <rect x="4" y="3" width="12" height="18" rx="2"/>
+            <path d="M8 7h4M8 11h4M8 15h2"/>
+            <path d="M16 14c1.5 0 3 1.2 3 3v2h-6v-2c0-1.8 1.5-3 3-3Z"/>
+            <circle cx="16" cy="11" r="2"/>
+          </svg>
+          Book a session online
+        </a>
+        <a href="tel:7183323401" class="btn btn-hero-ghost">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M6.5 3.5h3.2l1.2 4.2-2 1.2a12.5 12.5 0 0 0 5.2 5.2l1.2-2 4.2 1.2v3.2c0 .9-.7 1.6-1.6 1.6C10.2 18.1 5.9 13.8 5.9 8.1c0-.9.7-1.6 1.6-1.6Z"/>
+          </svg>
+          Book a session via phone
+        </a>
+      </div>
+    </div>
   </section>
+
+  @include('partials.home-awards-header')
 
   <section class="section section-alt">
     <div class="container">
@@ -40,9 +50,8 @@
           <div class="doctor-avatar">AS</div>
           <div>
             <h3 style="margin-bottom:2px;">Dr. Abdelrahman Salem</h3>
-            <div class="role">Director of Physical Therapy, PT, DPT, PhD, CCI</div>
-            <p style="margin-top:10px;">Over two decades treating patients in hospitals, nursing
-              homes, schools, and private practice.</p>
+            <div class="role">Doctor of Physical Therapy, DPT, MCCP, IMT, MP, CST</div>
+            <p style="margin-top:10px;">Over 37 years of professional experience providing expert care across hospitals, educational institutions, rehabilitation centers, and private practice.</p>
           </div>
         </div>
 
@@ -59,7 +68,7 @@
         <div class="promo-panel">
           <span class="eyebrow" style="color:#fff;">Limited Offer</span>
           <h3>Phone / Video Consultation</h3>
-          <div class="price">$14.99</div>
+          <div class="price">$49.99</div>
           <p style="color: rgba(255,255,255,0.85);">Mornings, evenings, and weekend appointments
             available.</p>
           <a href="{{ route('contact') }}" class="btn btn-primary">Setup an Appointment</a>
@@ -103,20 +112,16 @@
           </div>
           <h3>Flexible Scheduling</h3>
           <p>Morning, evening, and weekend appointments — plus phone and video consultations for
-            $14.99 — so care fits around your week.</p>
+            $49.99 — so care fits around your week.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section-alt">
-    <div class="container">
-      <div class="testimonial">
-        <p>"They understand how it feels when you're not at your best, and they work with you at
-          your own pace to get the most benefit out of every visit."</p>
-        <div class="who">— Patient review, via Yelp</div>
-      </div>
-    </div>
-  </section>
+  @include('partials.service-highlights')
+
+  @include('partials.home-contact')
+
+  @include('partials.home-resources')
 
 @endsection

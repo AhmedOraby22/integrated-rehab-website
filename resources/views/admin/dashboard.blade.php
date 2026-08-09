@@ -24,6 +24,18 @@
         </div>
 
         <div class="card">
+          <h3>Contact & Social</h3>
+          <p>Edit footer social links and the public contact email.</p>
+          <a href="{{ route('admin.site-settings.edit') }}" class="btn btn-primary">Edit Contact & Social</a>
+        </div>
+
+        <div class="card">
+          <h3>Testimonials Media</h3>
+          <p>Upload pictures, videos, and audio for the Testimonials pages.</p>
+          <a href="{{ route('admin.testimonial-media.index', 'picture') }}" class="btn btn-primary">Manage Media</a>
+        </div>
+
+        <div class="card">
           <h3>Website Pages</h3>
           <p>View the public site pages from here.</p>
           <a href="{{ route('home') }}" class="btn btn-dark" target="_blank" rel="noopener">Open Website</a>

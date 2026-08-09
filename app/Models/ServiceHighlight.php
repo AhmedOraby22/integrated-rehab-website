@@ -8,6 +8,8 @@ class ServiceHighlight extends Model
 {
     protected $fillable = [
         'title',
+        'bullets',
+        'cta_label',
         'image',
         'sort_order',
         'is_active',
@@ -17,6 +19,7 @@ class ServiceHighlight extends Model
     {
         return [
             'is_active' => 'boolean',
+            'bullets' => 'array',
         ];
     }
 
@@ -27,6 +30,11 @@ class ServiceHighlight extends Model
         }
 
         return asset('storage/'.$this->image);
+    }
+
+    public function getButtonLabelAttribute(): string
+    {
+        return $this->cta_label ?: ($this->title.' Service');
     }
 
     public function scopeActive($query)

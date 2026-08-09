@@ -18,6 +18,8 @@
   <div class="container admin-subnav-inner">
     <a href="{{ route('admin.dashboard') }}" class="{{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">Dashboard</a>
     <a href="{{ route('admin.service-highlights.edit') }}" class="{{ request()->routeIs('admin.service-highlights.*') ? 'active' : '' }}">Service Section</a>
+    <a href="{{ route('admin.site-settings.edit') }}" class="{{ request()->routeIs('admin.site-settings.*') ? 'active' : '' }}">Contact & Social</a>
+    <a href="{{ route('admin.testimonial-media.index', 'picture') }}" class="{{ request()->routeIs('admin.testimonial-media.*') ? 'active' : '' }}">Testimonials Media</a>
     <a href="{{ route('home') }}" target="_blank" rel="noopener">View Website</a>
   </div>
 </nav>

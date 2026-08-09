@@ -21,13 +21,13 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.9 2.2Z"/></svg>
             <div>
               <div><a href="tel:7183323401">718-332-3401</a> — Sheepshead Bay office</div>
-              <div><a href="tel:3474620980">347-462-0980</a> — Sunset Park office</div>
+              <div><a href="tel:3474620980">347-462-0980</a> — Bay Ridge office</div>
             </div>
           </div>
 
           <div class="line">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-            <div><a href="mailto:info@integratedrehabandphysicaltherapy.com">info@integratedrehabandphysicaltherapy.com</a></div>
+            <div><a href="mailto:{{ $siteSettings['contact_email'] }}">{{ $siteSettings['contact_email'] }}</a></div>
           </div>
 
           <div class="line">
